@@ -1,0 +1,56 @@
+/***** Icons *****/
+@import "font-awesome.scss";
+
+/************************************************
+ *  OVERAL
+ ************************************************/
+html, body { height: 100%;  background-color: #f1f1f1; color: #575757; }
+body { font:12px arial; }
+
+/***** HEADINGS *****/
+h1, h2, h3, h4, h5, h6 {  }
+/***** PSEUDO *****/
+a, a:link, a:visited, a:hover, a:active { text-decoration:none; }
+
+/************************************************
+ *  GENERICS
+ ************************************************/
+
+.no-wrap { white-space: nowrap !important; }
+.caret-block { display: block; text-align: center; }
+
+.show-grid-xs { margin-bottom:10px !important; }
+.show-grid-sm { margin-bottom:15px !important; }
+.show-grid-md { margin-bottom:30px !important; }
+
+.form-group-sm { min-height: 30px;}
+.form-group-sm-head { line-height: 30px; padding-bottom: 0; }
+.form-group-sm-push { line-height: 30px; min-height: 53px; padding-top: 22px; }
+.multi-line-label { margin-top:0 !important;padding-top:0 !important;line-height:15px; }
+
+.row-push-right { padding-right:15px !important; }
+
+/************************************************
+ *  BOOTSTRAP OVERIDES
+ ************************************************/
+
+/************************************************
+ *  LOGIN / Signup
+ ************************************************/
+.container-login { width: 400px; margin-top:60px; }
+.container-signup { width: 500px; margin-top:60px;  }
+
+/************************************************
+ *  HEADER
+ ************************************************/
+
+
+/************************************************
+ *  CONTENT
+ ************************************************/
+.container-main { margin-top: 50px; padding-top:15px; padding-bottom:15px; }
+
+/************************************************
+ *  FOOTER
+ ************************************************/
+footer { padding: 8px 0; }

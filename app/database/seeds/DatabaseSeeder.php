@@ -1,4 +1,6 @@
 <?php
+// to run seeder use this command in your terminal
+// php artisan db:seed
 
 class DatabaseSeeder extends Seeder {
 
@@ -11,7 +13,7 @@ class DatabaseSeeder extends Seeder {
 	{
 		Eloquent::unguard();
 
-		// $this->call('UserTableSeeder');
+        $this->call('UserTableSeeder');
 	}
 
 }

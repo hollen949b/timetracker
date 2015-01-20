@@ -11,7 +11,18 @@
 |
 */
 
-Route::get('/', function()
+
+// Guest
+Route::group(array('before' => 'guest'), function()
 {
-	return View::make('hello');
+    Route::get('login',  array('uses' => 'AuthController@login'));
+    Route::post('login', array('uses' => 'AuthController@postLogin'));
 });
+
+// Signed in
+Route::group(array('before' => 'auth'), function()
+{
+    Route::get('/',      array('uses' => 'DashboardController@index'));
+    Route::get('logout', array('uses' => 'AuthController@logout'));
+});
+
